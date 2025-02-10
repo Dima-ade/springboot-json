@@ -1,7 +1,10 @@
 D:\Adela\Java\Java_Workspace\springboot-json\src\main\java\com\example\pserver\configuration\DatabaseConfiguration.java
-D:\Adela\Java\Java_Workspace\springboot-json\src\main\java\com\example\pserver\entity\AddressEntity.java
+D:\Adela\Java\Java_Workspace\springboot-json\src\main\java\com\example\pserver\entity\BuildingEntity.java
+D:\Adela\Java\Java_Workspace\springboot-json\src\main\java\com\example\pserver\entity\MainAddressEntity.java
 D:\Adela\Java\Java_Workspace\springboot-json\src\main\java\com\example\pserver\entity\PersonEntity.java
+D:\Adela\Java\Java_Workspace\springboot-json\src\main\java\com\example\pserver\entity\SecondaryAddressEntity.java
 D:\Adela\Java\Java_Workspace\springboot-json\src\main\java\com\example\pserver\entity\ZipEntity.java
 D:\Adela\Java\Java_Workspace\springboot-json\src\main\java\com\example\pserver\persistence\ManagerPersistence.java
 D:\Adela\Java\Java_Workspace\springboot-json\src\main\java\com\example\pserver\PWebServiceApplication.java
+D:\Adela\Java\Java_Workspace\springboot-json\src\main\java\com\example\pserver\repository\BuildingRepository.java
 D:\Adela\Java\Java_Workspace\springboot-json\src\main\java\com\example\pserver\repository\PersonRepository.java

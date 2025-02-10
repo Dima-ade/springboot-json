@@ -1,0 +1,32 @@
+{
+  "name": "John",
+  "age": 20,
+  "gender": "male",
+  "mainAddress":
+    {
+      "street": "999 Rue",
+      "city": "Cluj",
+      "state": "Cluj",
+      "zip": {
+        "zip": "98765"
+      }
+    },
+  "secondaryAddress": [
+    {
+      "street": "123 Main Street",
+      "city": null,
+      "state": null,
+      "zip": {
+        "zip": "12345"
+      }
+    },
+    {
+      "street": "567 Second Street",
+      "city": "Craiova",
+      "state": "Dolj",
+      "zip": {
+        "zip": "37912"
+      }
+    }
+  ]
+}

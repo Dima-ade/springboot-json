@@ -1,5 +1,6 @@
 package com.example.pserver;
 
+import com.example.pserver.entity.BuildingEntity;
 import com.example.pserver.entity.PersonEntity;
 import com.example.pserver.persistence.ManagerPersistence;
 import com.fasterxml.jackson.core.JsonProcessingException;
@@ -37,16 +38,19 @@ public class PWebServiceApplication implements CommandLineRunner {
 	@Override
 	public void run(String... args) throws Exception {
 		System.out.println("Hello world");
-		PersonEntity personEntity = mapJsonInternal(args[0], objectMapper);
-		managerPersistence.save(personEntity);
+		InputStream personEntityInputStream = getJsonInputStream(args[0]);
+		InputStream buildingEntityInputStream = getJsonInputStream(args[1]);
+		// convert JSON string to Java Object
+		PersonEntity person = this.objectMapper.readValue(personEntityInputStream, PersonEntity.class);
+		managerPersistence.save(person);
+		BuildingEntity building = this.objectMapper.readValue(buildingEntityInputStream, BuildingEntity.class);
+		managerPersistence.save(building);
 	}
 
-	private static PersonEntity mapJsonInternal(String jsonInternal, ObjectMapper mapper) throws URISyntaxException, IOException {
+	private static InputStream getJsonInputStream(String jsonInternal) throws URISyntaxException, IOException {
 		var fileName=jsonInternal.trim();
 		Path filePath = Path.of(fileName);
 		InputStream inputStream = Files.newInputStream(filePath);
-		// convert JSON string to Java Object
-		PersonEntity person = mapper.readValue(inputStream, PersonEntity.class);
-		return person;
+		return inputStream;
 	}
 }

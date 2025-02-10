@@ -1,0 +1,12 @@
+{
+  "name": "Business Building 123",
+  "mainAddress":
+    {
+      "street": "123 Buildings Street",
+      "city": "Cluj",
+      "state": "Cluj",
+      "zip": {
+        "zip": "98765"
+      }
+    }
+}

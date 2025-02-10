@@ -1,7 +1,10 @@
 com\example\pserver\entity\PersonEntity.class
+com\example\pserver\entity\SecondaryAddressEntity.class
 com\example\pserver\entity\ZipEntity.class
 com\example\pserver\PWebServiceApplication.class
+com\example\pserver\entity\BuildingEntity.class
+com\example\pserver\entity\MainAddressEntity.class
+com\example\pserver\repository\BuildingRepository.class
 com\example\pserver\configuration\DatabaseConfiguration.class
 com\example\pserver\persistence\ManagerPersistence.class
 com\example\pserver\repository\PersonRepository.class
-com\example\pserver\entity\AddressEntity.class
